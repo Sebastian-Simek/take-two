@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styles from './FormControl.css';
 import classnames from 'classnames';
 
@@ -55,6 +56,6 @@ export function CheckboxControl({ legend, label, ...rest }) {
   );
 }
 
-export function FormButton({children, ...rest}) {
+export function FormButton({ children, ...rest }) {
   return <button className={styles.FormButton} {...rest}>{children}</button>;
 }
