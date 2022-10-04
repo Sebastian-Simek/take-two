@@ -24,7 +24,6 @@
       resize: vertical;
     }
   
-    *::placeholder,
     select:invalid,
     input:invalid {
       color: rgb(151, 151, 151);

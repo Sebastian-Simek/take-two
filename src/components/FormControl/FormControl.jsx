@@ -1,4 +1,4 @@
-import styles from './FormControls.css';
+import styles from './FormControl.css';
 import classnames from 'classnames';
 
 function FormControl({ label, children }) {

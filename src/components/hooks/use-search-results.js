@@ -9,7 +9,7 @@ export default function useSearchResults() {
     const [searchResults, setSearchResults] = useState([]);
     const [error, setError] = useState('');
     const [searchParams, setSearchParams] = useSearchParams();
-    const usableSearchParams = object.fromEntries(searchParams.entries());
+    const usableSearchParams = Object.fromEntries(searchParams.entries());
 
     const nextPage = async () => {
         usableSearchParams.page = parseInt(usableSearchParams.page) + 1;
