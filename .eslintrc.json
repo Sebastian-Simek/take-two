@@ -65,7 +65,8 @@
     "jsx-quotes": "error",
     "babel/no-invalid-this": 1,
     "babel/semi": 0,
-    "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/jsx-uses-react": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off"
   }
 }
