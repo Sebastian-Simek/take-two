@@ -32,6 +32,9 @@ module.exports = {
     new CopyPlugin({
       patterns: [{ from: 'public' }],
     }),
+    // Bring this in to allow use of process.env in the web. See also the
+    // resolve -> alias setting in this file, dotenv usage in this file, and
+    // the added process package.
     new webpack.ProvidePlugin({
       process: 'process/browser',
       React: 'react',

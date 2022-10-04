@@ -35,7 +35,7 @@ export default function useSearchResults() {
             const body = await search(searchObj);
             setSearchResults(body.results);
         } catch (e) {
-            setError('Error' + e.body.toString());
+            setError('Error' + e.toString());
         }
     }
 
