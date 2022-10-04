@@ -26,7 +26,7 @@ export default function useSearchResults() {
   }).ref;
 
   const searchPokedex = async (searchObj) => {
-    if (searchObj.page === null) {
+    if (searchObj.page === null || searchObj.page === undefined) {
       searchObj.page = 1;
     }
     setSearchParams(searchObj);
